@@ -3,8 +3,14 @@ while True:
     try:
         number = int(input("Enter a whole number: "))
 
-        match number:
-            case > 0:
-                print("Number is bigger than 0!")
+        if number > 0:
+            print("Greater than 0.")
+            break
+        elif number == 0:
+            print("Exactly 0.")
+            break
+        else:
+            print("Less than 0.")
+            break
     except ValueError:
         print("Input must be a whole number.")
